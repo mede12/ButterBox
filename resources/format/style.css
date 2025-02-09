@@ -1,0 +1,259 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVBAR 1 RED*/
+.navbar1 {
+    background-color: #DF6D2D; 
+}
+
+/* Styling the top navigation links */
+.topnav {
+    display: flex; /* Make it a flex container */
+    justify-content: right; /* Center the links */
+    gap: 17px; /* Space between links */
+    font-family: Poppins;
+    padding-right: 15px;
+}
+
+/* Styling the links */
+.topnav a {
+    color: white; /* White text */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 10px; /* Padding for clickable area */
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+/* Active link */
+.topnav a.active {
+    color: white;
+}
+
+/* Hover effect */
+.topnav a:hover {
+    opacity: 0.5; /* Reduce opacity on hover */
+}
+
+/* NAVBAR 2 WHITE*/
+.navbar2 {
+    background-color: #ffffff;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 10px 0;
+    padding-bottom: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0; /* Essential for sticky positioning */
+    z-index: 100; /* Ensure it's on top */
+}
+
+.nav-logo {
+    width: 150px; /* Adjust logo size */
+    height: auto;
+}
+
+.botnav {
+    display: flex;
+    gap: 17px;
+    font-family: Poppins;
+    padding-left: 550px;
+}
+
+/* Styling the links */
+.botnav a {
+    color: #123524;
+    text-decoration: none;
+    padding: 10px 10px;
+    font-size: 20px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+/* Hover effect */
+.botnav a:hover {
+    color: #DF6D2D;
+}
+
+
+
+/* FONTS */
+.poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+/* ICONS */
+.nav-icon {
+    width: 14px;
+    height: auto;
+    vertical-align: middle; /* Aligns the icon with text */
+    margin-right: 5px; /* Adds space between icon and text */
+}
+
+.nav2-icon {
+    width: 17px;
+    height: auto;
+    vertical-align: middle; /* Aligns the icon with text */
+    margin-right: 5px; /* Adds space between icon and text */
+}
+
+/* BUTTONS */
+.botnav-btn {
+    background-color: #DF6D2D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.botnav-btn:hover {
+    background-color: #853f19;
+}
+.spantext{
+    color: white;
+}
+.button-container {
+    display: flex; /* Make the container a flexbox */
+    justify-content: center; /* Center horizontally */
+    /* Optional: align-items: center; for vertical centering if needed */
+  }
+  
+.addcart {
+    background-color: #DF6D2D;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+.addcart:hover {
+    background-color: #CC5A1A;
+}
+
+/* LOGOS */
+
+.nav-logo {
+    width: 200px;
+    height: auto;
+    margin-left: 80px;
+    margin-top: 15px;
+}
+
+/*background*/
+.bgimg {
+    width: 100%; /* Make sure .bgimg takes full width */
+    height: auto;
+    overflow: hidden; /* Optional: Hide any potential image overflow */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+.bgimg img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Use cover if you want cropping */
+}
+
+
+/*SECTION SHOWCASE*/
+
+/*SECTION 2 CARDS*/
+
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Optional: for vertical centering */
+    padding: 20px; /* Add padding around the title if needed */
+    font-weight: bolder;
+    
+}
+
+.section-title p {
+    padding-top: 50px;
+    margin: 0; /* Remove default <p> margins if needed */
+    font-size: 2em; /* Example font size */
+    font-weight: bolder; /* Example font weight */
+    color: #333; /* Example color */
+    font-family: Poppins;
+    color: #123524;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: stretch; /* Key change: stretch cards to equal height */
+    padding: 20px;
+}
+
+.card {
+    width: 260px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    font-family: sans-serif;
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth hover effect */
+    background-color: #f8f8f8; /* Softer background color */
+    margin: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-bottom: 1px solid #eee; /* Subtle divider below image */
+}
+
+.card-content {
+    padding: 15px; /* Increased padding */
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 1.1em; /* Slightly larger title */
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: Poppins;
+    text-align: center;
+    color: #333; /* Darker title color */
+}
+
+.card-description {
+    font-size: 0.9em; /* Slightly larger description */
+    color: #666;
+    font-family: Poppins;
+    text-align: center;
+    flex-grow: 1;
+    margin-bottom: 15px; /* Space above button */
+}
